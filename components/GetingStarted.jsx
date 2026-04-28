@@ -12,7 +12,7 @@ export default function GetingStarted() {
         Join thousands of pharmacies already using PharmaCare to streamline
         their operations
       </p>
-      <Link to="" className={`bg-white text-blue-700 flex items-center gap-3
+      <Link to="/login" className={`bg-white text-blue-700 flex items-center gap-3
         px-4 py-2 rounded-md transition-all ease-in-out duration-300 hover:scale-110
         `}>
         Login Now <img src={arr} alt="" className="w-5"/>

@@ -12,6 +12,7 @@ import Admin from "../pages/Admin";
 import Cashier from "../pages/Cashier";
 import User from "../pages/User";
 import Footer from "../components/Footer";
+import Login from "../pages/Login";
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/cashier" element={<Cashier />} />
             <Route path="/user" element={<User />} />
+            <Route path="/login" element={<Login/>}/>
           </Routes>
         </main>
         <Footer />

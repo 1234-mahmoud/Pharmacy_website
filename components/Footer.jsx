@@ -1,9 +1,13 @@
 import React from "react";
 import pharma from "../src/assets/pharmacy.svg";
 import { RiPhoneLine, RiMailLine, RiMapPinLine } from "react-icons/ri";
-
+import { Link } from "react-router";
 export default function Footer() {
-  const quickLinks = ["Home", "Login", "About Us", "Services"];
+  const quickLinks = [
+    {title:"Home",link:'/'},
+    {title:"Login",link:'/login'},
+    {title:"About Us",link:'/'},
+    {title:"Services",link:'/'}];
 
   const services = [
     "Prescription Medicines",
@@ -48,9 +52,9 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-gray-300">
             {quickLinks.map((item, i) => (
               <li key={i}>
-                <a href="#" className="hover:text-white transition">
-                  {item}
-                </a>
+                <Link to={item.link} className="hover:text-white transition">
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>

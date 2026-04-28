@@ -1,5 +1,6 @@
 import React from "react";
 import arrow from '../src/assets/arr.svg'
+import { Link } from "react-router";
 export default function Hero() {
   return (
     <section className={`bg-blue-100/50 py-10 md:py-20 lg:py-30
@@ -12,7 +13,7 @@ export default function Hero() {
         A comprehensive pharmacy management system designed to streamline your
         operations, enhance customer service, and improve inventory management.
       </p>
-      <button className={`bg-blue-600 text-white p-4 flex items-center gap-2 rounded-lg hover:bg-blue-700`}>Get Started <img src={arrow} alt="" className={`w-5`}/></button>
+      <Link to="/login" className={`bg-blue-600 text-white p-4 flex items-center gap-2 rounded-lg hover:bg-blue-700`}>Get Started <img src={arrow} alt="" className={`w-5`}/></Link>
     </section>
   );
 }
