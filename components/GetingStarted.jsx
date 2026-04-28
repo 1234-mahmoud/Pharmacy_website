@@ -7,8 +7,8 @@ export default function GetingStarted() {
       className={`bg-blue-600 py-10 md:py-20 lg:py-30
     flex flex-col justify-center items-center gap-8 text-white`}
     >
-      <h2 className={`text-xl md:text-3xl lg:text-4xl font-bold`}>Ready to Get Started?</h2>
-      <p>
+      <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold`}>Ready to Get Started?</h2>
+      <p className="text-center">
         Join thousands of pharmacies already using PharmaCare to streamline
         their operations
       </p>

@@ -8,7 +8,7 @@ export default function Hero() {
       <p className={`text-2xl md:text-4xl lg:text-5xl font-extrabold`}>
         Welcome to <span className={`text-blue-600`}>Almasrya</span>
       </p>
-      <p className={`text-center text-gray-600 w-full md:w-100 lg:w-150`}>
+      <p className={`text-center px-3 text-gray-600 w-full md:w-100 lg:w-150`}>
         A comprehensive pharmacy management system designed to streamline your
         operations, enhance customer service, and improve inventory management.
       </p>
