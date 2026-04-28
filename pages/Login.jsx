@@ -157,7 +157,7 @@ export default function Login() {
           <input
             type="submit"
             value={`Login As ${data[selected].title}`}
-            className={`text-white bg-blue-600 w-full max-w-lg p-2 m-auto rounded-md`}
+            className={`text-white font-bold ${data[selected].bg_icon} w-full max-w-lg p-2 m-auto rounded-md`}
           />
         </form>
       </div>
