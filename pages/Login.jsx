@@ -9,6 +9,24 @@ import {
   RiAdminLine,
 } from "react-icons/ri";
 export default function Login() {
+  const credentials = [
+    {
+      role: "Admin",
+      email: "admin@pharmacare.com",
+      password: "admin123",
+    },
+    {
+      role: "Cashier",
+      email: "cashier@pharmacare.com",
+      password: "cashier123",
+    },
+    {
+      role: "User",
+      email: "user@pharmacare.com",
+      password: "user123",
+    },
+  ];
+
   const data = [
     {
       icon: RiAdminLine,
@@ -38,7 +56,7 @@ export default function Login() {
   };
   return (
     <div
-      className={`max-w-6xl my-10 mx-10 lg:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10`}
+      className={`max-w-6xl my-10 mx-2 lg:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10`}
     >
       {/* Roles Selection*/}
       <div
@@ -79,18 +97,15 @@ export default function Login() {
         <div className={`bg-gray-100 p-5 rounded-md`}>
           <h3 className={`font-bold my-2`}>Demo Credentials</h3>
           <ul>
-            <li className={`text-gray-600 flex gap-2`}>
-              <span className={`text-black font-semibold`}>Admin:</span>
-              admin@pharmacare.com / admin123
-            </li>
-            <li className={`text-gray-600 flex gap-2`}>
-              <span className={`text-black font-semibold`}>Cashier:</span>
-              cashier@pharmacare.com / cashier123
-            </li>
-            <li className={`text-gray-600 flex gap-2`}>
-              <span className={`text-black font-semibold`}>User:</span>
-              user@pharmacare.com / user123
-            </li>
+            {credentials.map((c, idx) => (
+              <li
+                key={idx}
+                className="text-gray-600 flex gap-2 text-sm md:text-lg"
+              >
+                <span className="text-black font-semibold">{c.role}:</span>
+                {c.email} / {c.password}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
