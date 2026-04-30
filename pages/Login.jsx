@@ -9,24 +9,6 @@ import {
   RiAdminLine,
 } from "react-icons/ri";
 export default function Login() {
-  const credentials = [
-    {
-      role: "Admin",
-      email: "admin@pharmacare.com",
-      password: "admin123",
-    },
-    {
-      role: "Cashier",
-      email: "cashier@pharmacare.com",
-      password: "cashier123",
-    },
-    {
-      role: "User",
-      email: "user@pharmacare.com",
-      password: "user123",
-    },
-  ];
-
   const data = [
     {
       icon: RiAdminLine,
@@ -93,21 +75,7 @@ export default function Login() {
             );
           })}
         </div>
-        {/* Credentials */}
-        <div className={`bg-gray-100 p-5 rounded-md`}>
-          <h3 className={`font-bold my-2`}>Demo Credentials</h3>
-          <ul>
-            {credentials.map((c, idx) => (
-              <li
-                key={idx}
-                className="text-gray-600 flex gap-2 text-sm md:text-lg"
-              >
-                <span className="text-black font-semibold">{c.role}:</span>
-                {c.email} / {c.password}
-              </li>
-            ))}
-          </ul>
-        </div>
+ 
       </div>
       {/* Login  */}
       <div
