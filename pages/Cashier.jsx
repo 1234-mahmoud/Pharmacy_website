@@ -30,7 +30,7 @@ export default function Cashier() {
           className={`w-full flex flex-col lg:flex-row justify-between items-center  py-5`}
         >
           <div
-            className={`w-full h-40 rounded-xl flex justify-between items-center px-10
+            className={`w-full h-35 rounded-xl flex justify-between items-center px-3 md:px-10
         bg-white border border-gray-300 hover:border-blue-400
         `}
           >

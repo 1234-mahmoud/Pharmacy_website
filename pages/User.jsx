@@ -13,7 +13,7 @@ export default function User() {
           Browse and order your medications online
         </p>
       </div>
-      <div className={`container m-auto flex flex-col gap-3`}>
+      <div className={`container m-auto flex flex-col gap-3 px-3`}>
         <div
           className={`w-full h-full rounded-xl flex flex-col gap-2 items-center p-5
                 bg-white shadow-2xl relative 
@@ -44,7 +44,7 @@ export default function User() {
           className={`w-full flex flex-col lg:flex-row justify-between items-center  py-5 `}
         >
           <div
-            className={`w-full h-50 rounded-xl flex flex-col gap-5 justify-center px-10
+            className={`w-full h-50 rounded-xl flex flex-col gap-5 justify-center px-3 md:px-10
            bg-white border border-gray-300 transition-all duration-500 hover:shadow-lg hover:shadow-gray-300 
            `}
           >
@@ -54,7 +54,7 @@ export default function User() {
                   Paracetamol 500mg
                 </span>
                 <span
-                  className={`bg-blue-100 text-blue-600 w-fit py-1 px-3 rounded-lg`}
+                  className={`bg-blue-100 text-blue-600 w-fit px-3 rounded-lg`}
                 >
                   Pain Relief
                 </span>
