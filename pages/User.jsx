@@ -2,6 +2,7 @@ import React from "react";
 import Search from "../components/Search";
 import Medicines from "../components/Medicines";
 import MyOrders from "../components/MyOrders";
+import Profile from "../components/Profile";
 
 export default function User() {
   return (
@@ -44,6 +45,9 @@ export default function User() {
         {/* ------------------------------------------- */}
         {/* Orders */}
         <MyOrders/>
+         {/* ------------------------------------------- */}
+        {/* Profile */}
+        <Profile/>
       </div>
     </div>
   );
