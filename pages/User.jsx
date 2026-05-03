@@ -14,13 +14,10 @@ export default function User() {
         </p>
       </div>
       <div className={`container m-auto flex flex-col gap-3 px-3`}>
-        <div
-          className={`w-full h-full rounded-xl flex flex-col gap-2 items-center p-5
-                bg-white shadow-2xl relative 
-                `}
-        >
+
           {/* Search / filter */}
-          <div className={`w-full flex flex-col gap-5`}>
+          <div className={`w-full h-full rounded-xl grid grid-cols-1 md:grid-cols-2  gap-2 p-5
+                bg-white shadow-2xl relative `}>
           <Search/>
 
             <select
@@ -37,7 +34,7 @@ export default function User() {
               <option value="">Medicine4</option>
             </select>
           </div>
-        </div>
+        
 
         {/* Medicines */}
         <div
